@@ -1,0 +1,91 @@
+{
+  "name": "mvp_v2",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "18.20.*"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.10.8",
+    "@craco/craco": "^7.1.0",
+    "@ethersproject/bignumber": "^5.5.0",
+    "@solana/web3.js": "^1.95.1",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.0.1",
+    "bluebird": "^3.7.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "graphql": "^16.9.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "mongoose-sequence": "^6.0.1",
+    "multer": "^1.4.5-lts.1",
+    "ndb": "^1.1.5",
+    "node-cron": "^3.0.2",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "ra-data-graphql": "^5.0.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-horizontal-scrolling-menu": "^7.1.1",
+    "react-modal": "^3.14.4",
+    "react-router-dom": "^6.22.0",
+    "react-scripts": "5.0.1",
+    "request": "^2.88.2",
+    "sqlite3": "^5.1.7",
+    "tronweb": "^5.3.2",
+    "web-vitals": "^4.2.2"
+  },
+  "scripts": {
+    "start": "craco start --openssl-legacy-provider | node backend/index.js",
+    "front": "craco start",
+    "backend": "node backend/index.js",
+    "build": "craco --openssl-legacy-provider build",
+    "test": "craco --openssl-legacy-provider test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "globals": {
+      "BigInt": true
+    },
+    "plugins": [
+      "react"
+    ],
+    "rules": {
+      "react/react-in-jsx-scope": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "plugins": [
+    "@babel/plugin-proposal-private-property-in-object"
+  ],
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "autoprefixer": "^10.4.19",
+    "eslint-plugin-react": "^7.34.4",
+    "postcss": "^8.4.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+  }
+}
